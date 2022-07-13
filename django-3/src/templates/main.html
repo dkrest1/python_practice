@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dev||Community</title>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <div class="">
+      {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+        <li>{{message}}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% block content %} {% endblock content %}
+  </body>
+</html>
